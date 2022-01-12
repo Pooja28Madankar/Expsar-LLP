@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rampart+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@200;400;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url("Background-img3.jpg");
+  background-position: center;
+  background-size: cover;
+  font-family: cursive;
+}
+
+/* --------------- Navigation section  -------------*/
+
+nav {
+  height: 80px;
+  width: 100%;
+  box-shadow: 0.25em 0.25em 0.75em rgba(116, 110, 110, 0.25),
+    0.125em 0.125em 0.25em rgba(105, 100, 100, 0.15);
+    position: sticky;
+}
+label.logo {
+    font-family:'Abril Fatface',cursive;
+  background: -webkit-linear-gradient(rgb(243, 183, 183),rgb(199, 132, 8));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 40px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+.logo span {
+  color: rgb(8, 248, 8);
+}
+nav ul {
+  float: right;
+  margin-right: 50px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a {
+  color: white;
+  font-size: 20px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: capitalize;
+}
+a.active,
+a:hover {
+  background: #0865ac;
+  transition: 0.5s;
+}
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+.content {
+  width: 90%;
+  color: ivory;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.content h1 {
+  font-size: 35px;
+  color: rgb(11, 255, 11);
+  font-weight: bolder;
+  text-transform: uppercase;
+  font-family: cursive;
+}
+.content p {
+  font-size: 25px;
+  margin-top: 30px;
+  line-height: 30px;
+  text-transform: capitalize;
+  line-height: 40px;
+  font-family: cursive;
+  margin-bottom: 50px;
+}
+#check {
+  display: none;
+}
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+  .content h1 {
+    font-size: 30px;
+  }
+  .content p {
+    font-size: 20px;
+  }
+}
+
+/* Media Queries For Responsive Page */
+
+@media (max-width: 858px) {
+    .checkbtn {
+      display: block;
+    }
+    ul {
+      position: fixed;
+      width: 100%;
+      height: 75vh;
+      background: rgb(17, 28, 72);
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all 0.5s;
+      z-index: 1;
+    }
+    nav ul li {
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a {
+      font-size: 20px;
+    }
+    a:hover,
+    a.active {
+      background: none;
+      color: #0082e6;
+    }
+    #check:checked ~ ul {
+      left: 0;
+    }
+    label .logo {
+      font-size: 30px;
+    }
+    .content h1 {
+      font-size: 25px;
+    }
+    .content p {
+      font-size: 18px;
+    }
+  }
+/* ----------- project Section ------------ */
+.project h1 {
+    font-family: "Rampart One", cursive;
+    background: -webkit-linear-gradient(#8e0e00, #1f1c18);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 50px;
+    text-transform: capitalize;
+    text-align: center;
+
+  }
+ 
+ .project__container {
+    /* margin-left: 120px; */
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .box {
+    width: 25%; 
+    padding: 50px;
+    /* padding-left: 10px; */
+    display: block;
+    border:2px solid black;
+    margin: 20px;
+  }
+  .box img {
+    width: 100%;
+    border-radius: 4px;
+  }
+  .box img:hover {
+    transform: scale(1.2, 1.2);
+    transition: 0.3s transform;
+  } 
+  .box .text{
+      text-align: center;
+      font-size: 17px;
+      font-family: cursive;
+      margin-top: 20px;
+  }
+  table{
+    justify-items: center;
+    border: collapse;
+    margin:10px 50px;
+  }
+
+  table th{
+   text-align: left; 
+   padding: 4px 30px 4px 8px;
+   border: 1px solid black;
+   background-color:darkslategray;
+   font-size: 18px;
+  }
+
+  table td{
+    border: 1px solid black;
+    padding: 4px 8px;
+  }
+
+  .shital{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    font-size: 23px;
+    margin:10px 50px;
+  }
+  .cj{
+    font-style: italic;
+    font-size: x-large;
+    margin:25px 50px;
+  }
+.sakshi{
+  
+  margin:25px 50px;
+}
+  .preti{
+   height: 300px;
+   width: 400px;
+   margin:25px 50px;
+  }
+  .ayush{
+    margin:25px 50px;
+  }
+
+  /* ------------ Footer Section ----------- */
+  
+  .footer__section {
+    font-family: cursive;
+    width: 100%;
+  }
+  .footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    padding: 20px 0px;
+    /* margin-top: 20px; */
+    justify-content: center;
+  }
+  .footer p {
+    font-size: 16px;
+    text-align: center;
+  }
+  
